@@ -13,6 +13,7 @@ dev.renderobjdrawmode = { [0] = "POINTS", [1] = "LINES", [2] = "TRIANGLES", }
 
 function dev.Init()
 	-- Register Button	
+	--test
 	ml_gui.ui_mgr:AddSubMember({ id = "GW2MINION##DEV_1", name = "Dev-Monitor", onClick = function() dev.open = not dev.open end, tooltip = "Open the Dev monitor.", texture = GetStartupPath().."\\GUI\\UI_Textures\\api.png"},"GW2MINION##MENU_HEADER","GW2MINION##MENU_ADDONS")	
 end
 RegisterEventHandler("Module.Initalize",dev.Init)
